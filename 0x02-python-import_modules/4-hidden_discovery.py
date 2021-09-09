@@ -2,12 +2,10 @@
 import hidden_4
 
 
-def main():
-    names = dir(hidden_4)
-    names.sort()
-    for c in names:
-        if c[:2] != "__":
-            print("{}".format(c))
+def principal():
+    for i in dir(hidden_4):
+        if not (i[0] == '_' and i[1] == '_'):
+            print(i)
 
 if __name__ == "__main__":
-    main()
+    principal()
